@@ -1,3 +1,4 @@
+import {React} from '../imports/reactimports';
 
 function App() {
   return (
