@@ -2,8 +2,10 @@ import {React} from '../imports/reactimports';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App"> 
 
+      <h1>Film</h1>
+      
     </div>
   );
 }
