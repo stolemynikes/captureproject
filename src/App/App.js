@@ -23,7 +23,7 @@ function App() {
           {/* Render Out AboutUs */}
         </Route>
 
-        <Route path='/work' element={<OurWork/>}>
+        <Route path='/work' exact element={<OurWork/>}>
           {/* Render Out OurWork */}
         </Route>
 
