@@ -3,12 +3,16 @@ import {React} from '../../imports/reactimports';
 //Import Images
 import home1 from '../../assets/images/home1.png';
 
+//Import components
+import {Wave} from '../../imports/componentimports'
+
 //Styled
 import {About, Description, Image, Hide} from '../../styles'
 
 //Framer Motion
 import {motion} from 'framer-motion';
 import { titleAnim, fade, photoAnim } from '../../animation';
+
 
 const AboutSection = () => {
 
@@ -57,6 +61,8 @@ const AboutSection = () => {
                 <motion.img variants={photoAnim} src={home1} alt="Guy with a camera" />
 
             </Image>
+
+            <Wave/>
         
         </About>
 
