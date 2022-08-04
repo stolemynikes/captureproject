@@ -6,6 +6,10 @@ import { useLocation } from 'react-router-dom';
 
 import { MovieState } from '../movieState';
 
+//Import Animations
+import {motion} from 'framer-motion';
+import { pageAnimation } from '../animation';
+
 const MovieDetail = () => {
 
     const url = useLocation();
@@ -28,7 +32,7 @@ const MovieDetail = () => {
 
         {movie && (
 
-        <Details>
+        <Details variants={pageAnimation} initial='hidden' animate='show' exit='exit'>
 
             <Headline>
 
@@ -62,7 +66,7 @@ const MovieDetail = () => {
     )
 }
 
-const Details = styled.div`
+const Details = styled(motion.div)`
     color: white;
 `
 
