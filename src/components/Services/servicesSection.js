@@ -1,5 +1,8 @@
 import { React } from '../../imports/reactimports';
 
+//Import components
+import {useScroll} from '../../imports/componentimports';
+
 //Import Icons
 import clock from '../../assets/images/clock.svg';
 import diaphragm from '../../assets/images/diaphragm.svg';
@@ -13,12 +16,21 @@ import home2 from '../../assets/images/home2.png';
 import styled from 'styled-components';
 import {About, Description, Image} from '../../styles'
 
+//Framer Motion
+import { scrollReveal } from '../../animation';
+
+
+
+
 
 
 const ServicesSection = () => {
+
+    const [element, controls] = useScroll();
+
     return( 
         
-        <Services>
+        <Services variants={scrollReveal} animate={controls} initial='hidden' ref={element}>
 
             <Description>
 
