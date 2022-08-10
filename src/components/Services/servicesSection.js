@@ -120,9 +120,10 @@ const Card = styled.div`
 
         h3 {
             margin-left: 1rem;
-            background: white;
+            background: rgba(255,255,255);
             color: black;
             padding: 1rem;
+            border-radius: 5px;
         }
     }
 `
